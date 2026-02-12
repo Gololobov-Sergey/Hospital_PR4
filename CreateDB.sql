@@ -1,4 +1,4 @@
-use [master];
+﻿use [master];
 go
 
 if db_id('Hospital_PR4') is not null
