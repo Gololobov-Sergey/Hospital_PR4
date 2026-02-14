@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <SqlWorkbenchSqlProject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Hospital_PR4">
   <Items>
-    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+    <LogicalFolder Name="Соединения" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="DESKTOP-PJT6V3O\SQLEXPRESS:DESKTOP-PJT6V3O\golol">
+        <ConnectionNode Name="DESKTOP-PJT6V3O\SQLEXPRESS:">
           <Created>2026-02-12T13:00:33.2107144+02:00</Created>
           <Type>SQL</Type>
           <Server>DESKTOP-PJT6V3O\SQLEXPRESS</Server>
           <UserName />
-          <Authentication>Windows Authentication</Authentication>
+          <Authentication>SQL</Authentication>
           <InitialDB>Hospital_PR4</InitialDB>
           <LoginTimeout>15</LoginTimeout>
           <TrustServerCertificate>True</TrustServerCertificate>
@@ -17,9 +17,23 @@
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
           <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
         </ConnectionNode>
+        <ConnectionNode Name="mssql-srv.step.edu:sa">
+          <Created>2026-02-14T12:37:04.1495159+02:00</Created>
+          <Type>SQL</Type>
+          <Server>mssql-srv.step.edu</Server>
+          <UserName>sa</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB>Hospital_PR4</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <TrustServerCertificate>True</TrustServerCertificate>
+          <EncryptionOption>True</EncryptionOption>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Среда Microsoft SQL Server Management Studio - запрос</ApplicationName>
+        </ConnectionNode>
       </Items>
     </LogicalFolder>
-    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+    <LogicalFolder Name="Запросы" Type="0" Sorted="true">
       <Items>
         <FileNode Name="CreateDB.sql">
           <AssociatedConnectionMoniker />
@@ -28,14 +42,20 @@
           <FullPath>CreateDB.sql</FullPath>
         </FileNode>
         <FileNode Name="InsertData.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-PJT6V3O\SQLEXPRESS:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>DESKTOP-PJT6V3O\SQLEXPRESS</AssociatedConnSrvName>
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:mssql-srv.step.edu:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>mssql-srv.step.edu</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>InsertData.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Query.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:mssql-srv.step.edu:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>mssql-srv.step.edu</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>Query.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
-    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+    <LogicalFolder Name="Разное" Type="3" Sorted="true">
       <Items />
     </LogicalFolder>
   </Items>
